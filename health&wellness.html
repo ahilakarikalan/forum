@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post - Health & Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /** CSS (styles.css) **/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.post-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h1 {
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.post p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+.comments h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.comment {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.add-comment {
+    margin-top: 30px;
+}
+
+.add-comment h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.add-comment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-comment label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-comment textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.add-comment button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-comment button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- View Post Section -->
+    <section class="post-container">
+        <article class="post">
+            <h1>Mindfulness and Its Benefits for Mental Health</h1>
+            <p><strong>Posted by:</strong> John Smith | <strong>Date:</strong> November 17, 2024</p>
+
+            <div class="post-content">
+                <p>Mindfulness is a powerful practice that involves staying present in the moment and being aware of your thoughts, feelings, and surroundings without judgment. Studies have shown that incorporating mindfulness into daily routines can significantly reduce stress and improve overall mental well-being.</p>
+                <p>Practicing mindfulness can help enhance focus, reduce anxiety, and even improve sleep quality. Techniques such as deep breathing exercises, meditation, and mindful walking are accessible ways to start experiencing these benefits.</p>
+                <p>Have you tried mindfulness? How has it impacted your life? Share your experiences in the comments below!</p>
+            </div>
+        </article>
+
+        <!-- Comment Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <div class="comment">
+                <p><strong>Susan:</strong> I've been practicing mindfulness for a year, and it has helped me manage my work-related stress so much better!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Michael:</strong> Mindful meditation has greatly improved my sleep routine. I highly recommend it to anyone struggling with insomnia.</p>
+            </div>
+        </section>
+
+        <!-- Add Comment Form -->
+        <section class="add-comment">
+            <h2>Add Your Comment</h2>
+            <form action="#" method="post">
+                <label for="comment">Your Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ForumHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

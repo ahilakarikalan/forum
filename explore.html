@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore ForumHub</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+    /* General Page Styles */
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(182, 218, 219);
+    
+}
+
+header {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+.explore-hero {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.explore-hero h1 {
+    font-size: 2.5rem;
+    color: rgb(6, 130, 155);
+}
+
+.explore-hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.featured-categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-categories h2 {
+    font-size: 2rem;
+    color: rgb(6, 130, 155);
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+    color: rgb(6, 130, 155);
+    font-size: 1.2rem;
+}
+
+.category-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(216, 208, 51);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.explore-btn:hover {
+    background-color: #ede855;
+}
+
+.trending, .popular-posts {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.trending h2, .popular-posts h2 {
+    font-size: 2rem;
+    color: rgb(6, 130, 155);
+}
+
+.trending-list, .post-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trending-item, .post-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.trending-item h3, .post-card h3 {
+    font-size: 1.2rem;
+    color: rgb(6, 130, 155);
+}
+
+.trending-item p, .post-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.trending-link, .post-link {
+    text-decoration: none;
+    color: rgb(6, 130, 155);
+    font-weight: bold;
+}
+
+.trending-link:hover, .post-link:hover {
+    color: rgb(6, 130, 155);
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+
+    <!-- Navbar (Optional) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="alter.html">Home</a></li>
+                <li><a href="explore.html" class="active">Explore</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="explore-hero">
+        <h1>Start Exploring</h1>
+        <p>Join conversations, share ideas, and discover new topics in your favorite categories.</p>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="featured-categories">
+        <h2>Featured Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <h3>Technology</h3>
+                <p>Join the tech community to discuss the latest innovations and breakthroughs.</p>
+                <a href="category.html?cat=technology" class="explore-btn">Explore Technology</a>
+            </div>
+            <div class="category-card">
+                <h3>Health</h3>
+                <p>Discuss health, wellness, fitness, and mental well-being.</p>
+                <a href="category.html?cat=health" class="explore-btn">Explore Health</a>
+            </div>
+            <div class="category-card">
+                <h3>Entertainment</h3>
+                <p>Share opinions on movies, TV shows, music, and pop culture.</p>
+                <a href="category.html?cat=entertainment" class="explore-btn">Explore Entertainment</a>
+            </div>
+            <div class="category-card">
+                <h3>Science</h3>
+                <p>Explore the latest in scientific discoveries and research.</p>
+                <a href="category.html?cat=science" class="explore-btn">Explore Science</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Discussions Section -->
+    <section class="trending">
+        <h2>Trending Discussions</h2>
+        <div class="trending-list">
+            <div class="trending-item">
+                <h3>The Future of Artificial Intelligence</h3>
+                <p>Explore the potentials and risks of AI in various fields.</p>
+                <a href="discussion.html?id=1" class="trending-link">Join the discussion</a>
+            </div>
+            <div class="trending-item">
+                <h3>Climate Change: What Can We Do?</h3>
+                <p>Join the conversation on how we can combat climate change.</p>
+                <a href="discussion.html?id=2" class="trending-link">Join the discussion</a>
+            </div>
+            <div class="trending-item">
+                <h3>Top Summer Movies to Watch</h3>
+                <p>Which movies are you most excited to watch this summer?</p>
+                <a href="discussion.html?id=3" class="trending-link">Join the discussion</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Posts Section -->
+    <section class="popular-posts">
+        <h2>Popular Posts</h2>
+        <div class="post-list">
+            <div class="post-card">
+                <h3>How to Stay Productive While Working from Home</h3>
+                <p>Tips and tricks to boost your productivity while working remotely.</p>
+                <a href="post.html?id=1" class="post-link">Read more</a>
+            </div>
+            <div class="post-card">
+                <h3>Best Fitness Routines for Beginners</h3>
+                <p>Starting your fitness journey? Here's a beginner's guide to get started.</p>
+                <a href="post.html?id=2" class="post-link">Read more</a>
+            </div>
+            <div class="post-card">
+                <h3>Understanding the Basics of Blockchain Technology</h3>
+                <p>A simple guide to understanding blockchain and how it works.</p>
+                <a href="post.html?id=3" class="post-link">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 World Chat. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

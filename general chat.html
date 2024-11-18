@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post - General Chat</title>
+ 
+    <style>
+        /** CSS (styles.css) **/
+
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:   rgb(182, 218, 219);
+}
+
+header {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.post-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h1 {
+    color: rgb(6, 130, 155);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.post p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+.comments h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.comment {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.add-comment {
+    margin-top: 30px;
+}
+
+.add-comment h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.add-comment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-comment label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-comment textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.add-comment button {
+    background-color: rgb(216, 208, 51);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-comment button:hover {
+    background-color: #ede855;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- View Post Section -->
+    <section class="post-container">
+        <article class="post">
+            <h1>Discussion on Modern Social Media Trends</h1>
+            <p><strong>Posted by:</strong> Kavya | <strong>Date:</strong> November 17, 2024</p>
+
+            <div class="post-content">
+                <p>Social media has become an integral part of daily life, influencing how we communicate, consume news, and even shape public opinion. Platforms like X (formerly Twitter), TikTok, and Instagram have significantly impacted cultural norms and trends. The question is, where do we draw the line between productive use and over-dependence?</p>
+                <p>While social media has its benefits, such as connecting people globally and democratizing information, there are challenges like misinformation and mental health concerns. How do we ensure a balanced approach?</p>
+                <p>We would love to hear your opinions on how social media is shaping our world today!</p>
+            </div>
+        </article>
+
+        <!-- Comment Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <div class="comment">
+                <p><strong>Mahesh:</strong> I think social media has its positives, but the rise of misinformation is worrying.</p>
+            </div>
+            <div class="comment">
+                <p><strong>Murugan:</strong> It's great for staying connected, but the time I spend on it is definitely too much!</p>
+            </div>
+        </section>
+
+        <!-- Add Comment Form -->
+        <section class="add-comment">
+            <h2>Add Your Comment</h2>
+            <form action="#" method="post">
+                <label for="comment">Your Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ForumHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

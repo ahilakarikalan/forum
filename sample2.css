@@ -1,0 +1,19 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    margin-right: 20px;
+}
+#name{
+    color: rgb(89, 25, 148);
+    
+}
+nav{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    margin-right: 50px;
+    
+}

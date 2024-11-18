@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForumHub - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ForumHub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categoriesLine">Categories</a></li>
+                <li><a href="#TrendingLine">Trending</a></li>
+                <li><a href="#aboutLine">About</a></li>
+                <li><a href="#ContactLine">Contact</a></li>
+            </ul>
+            <form action="login.html">
+                <button class="login-btn">Login</button>
+            </form>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to ForumHub</h1>
+            <p>Join the conversation and connect with people who share your interests.</p>
+            <form action="explore.html">
+                <button class="cta-btn" onclick="navigateToDiscussions()">Start Exploring</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <h3>Engaging Topics</h3>
+            <p>Discover discussions on a variety of subjects and expand your knowledge.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Live Chat Support</h3>
+            <p>Stay connected with real-time chat and notifications for new posts.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Personalized Feeds</h3>
+            <p>Receive updates and posts tailored to your interests.</p>
+        </div>
+    </section>
+
+
+
+    <div id="categoriesLine">
+        <section class="categories">
+            <h2>Discussion Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+
+                    <h3>Technology</h3>
+                    <p>Explore the latest trends and discussions in the tech world.</p>
+                    <form action="technology.html">
+                        <button onclick="navigateToCategory('technology')">View Posts</button>
+                    </form>
+                </div>
+                <div class="category-card">
+                    <h3>Science</h3>
+                    <p>Discuss scientific discoveries, theories, and insights.</p>
+                    <form action="science.html">
+                        <button onclick="navigateToCategory('science')">View Posts</button>
+                    </form>
+                </div>
+                <div class="category-card">
+                    <h3>Entertainment</h3>
+                    <p>Share opinions on movies, TV shows, and music.</p>
+                    <form action="entertainment.html">
+                        <button onclick="navigateToCategory('entertainment')">View Posts</button>
+                    </form>
+                </div>
+                <div class="category-card">
+                    <h3>Sports</h3>
+                    <p>Join discussions about your favorite sports and teams.</p>
+                    <form action="sports.html">
+                        <button onclick="navigateToCategory('sports')">View Posts</button>
+                    </form>
+                </div>
+                <div class="category-card">
+                    <h3>Health & Wellness</h3>
+                    <p>Talk about fitness, nutrition, and mental well-being.</p>
+                    <form action="health&wellness.html">
+                        <button onclick="navigateToCategory('health')">View Posts</button>
+                    </form>
+                </div>
+                <div class="category-card">
+                    <h3>General Chat</h3>
+                    <p>Connect with others in free-form conversations.</p>
+                   <form action="general chat.html">
+                    <button onclick="navigateToCategory('general')">View Posts</button>
+                </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="TrendingLine">
+        <section class="trending">
+            <h2>Trending Discussions</h2>
+            <div class="trending-list">
+                <div class="trending-item">
+                    <h3>New AI Breakthrough in Machine Learning</h3>
+                    <p>Discussion about the latest AI breakthrough and its implications in various industries.</p>
+                     <form action="ai.html"><button>Join the discussion</button></form>
+                </div>
+                <div class="trending-item">
+                    <h3>Climate Change: Urgent Action Needed</h3>
+                    <p>What are the latest findings in climate science and what can be done to mitigate the effects?</p>
+                    <form action="climate.html"><button>Join the discussion</button></form>
+                </div>
+                <div class="trending-item">
+                    <h3>Sports Highlights: FIFA World Cup 2024</h3>
+                    <p>Debates and predictions for the 2024 FIFA World Cup—who will win this year?</p>
+                    <form action="highlight.html"><button>Join the discussion</button></form> 
+                </div>
+                <div class="trending-item">
+                    <h3>Top 10 Movie Releases This Year</h3>
+                    <p>Talk about the best upcoming movie releases for the year—what are you most excited about?</p>
+                    <!-- <a href="#" class="trending-link">Join the discussion</a> -->
+                    <form action="top10.html"><button>Join the discussion</button></form>
+                </div>
+                <div class="trending-item">
+                    <h3>Fitness Tips: Getting Ready for Summer</h3>
+                    <p>Share your workout plans and health tips to get fit in time for the summer!</p>
+                    <form action="fitness.html"><button>Join the discussion</button></form>
+                </div>
+            </div> 
+        </section>
+    </div>
+
+    <div id="ContactLine">
+        <section class="contact">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or feedback, feel free to get in touch with us. We're always happy to hear
+                    from
+                    you!</p>
+
+                <form class="contact-form" action="#" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Us</h3>
+                    <p>Feel free to reach out to us via social media or our official support email:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:support@forumhub.com">support@forumhub.com</a></li>
+                        <li>Twitter: <a href="https://twitter.com/forumhub" target="_blank">@forumhub</a></li>
+                        <li>Facebook: <a href="https://facebook.com/forumhub" target="_blank">ForumHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="aboutLine">
+        <section class="about">
+            <div class="about-container">
+                <h2>About ForumHub</h2>
+                <p>ForumHub is a vibrant online community where people from all walks of life come together to engage in
+                    meaningful discussions, share ideas, and learn from each other. Whether you're passionate about
+                    technology, health, entertainment, or general interests, ForumHub offers a space for everyone to
+                    connect, discuss, and grow.</p>
+
+                <div class="about-mission">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to foster open communication and empower individuals to share knowledge, ideas,
+                        and
+                        insights in a safe, respectful, and supportive environment. We believe in the power of community
+                        to
+                        drive positive change and innovation.</p>
+                </div>
+
+                <div class="about-team">
+                    <h3>Meet Our Team</h3>
+                    <p>ForumHub was created by a passionate group of developers, moderators, and community managers
+                        dedicated to making online discussions more meaningful. Our team works hard to ensure that the
+                        platform remains safe, welcoming, and engaging for everyone.</p>
+                </div>
+
+                <div class="about-values">
+                    <h3>Our Values</h3>
+                    <ul>
+                        <li><strong>Respect:</strong> We believe in treating everyone with kindness, understanding, and
+                            respect.</li>
+                        <li><strong>Innovation:</strong> We're constantly looking for new ways to improve the user
+                            experience and bring fresh ideas to the platform.</li>
+                        <li><strong>Community:</strong> We value the voices of our users and strive to create a space
+                            where
+                            everyone feels heard and valued.</li>
+                        <li><strong>Integrity:</strong> We maintain transparency and honesty in all our actions and
+                            decisions.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 ForumHub. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

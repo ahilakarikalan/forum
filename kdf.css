@@ -1,0 +1,64 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(182, 218, 219) !important;
+    /* background-color: #0d6efd; */
+    
+}
+h1{
+    font-family: ruthie;
+    text-align: center; 
+    background-color: white;
+    padding: 15px;
+    color: rgb(28, 132, 153) ;
+    animation-name: title;
+    animation-duration: 5s;
+}
+@keyframes title {
+    0%  {color: rgb(227, 248, 42);}
+    50% {color: rgb(36, 171, 189);}
+    100%  {color: rgb(0, 0, 0);}   
+}
+nav li{
+    display: inline;
+    padding: 25px;
+    font-family: yesteryear;
+    font-size: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color:black;
+}
+nav{
+    text-align: center;
+}
+.image{
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 10px;
+    height: 400px;
+    width: 470px; 
+}
+.image:hover{
+    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
+}
+#explain{
+    font-family: yesteryear;
+    /* text-align: center; */
+    padding: 50px;
+    /* border: 1px solid; */
+}
+.socialMedia{
+    text-align: center;
+    background-color: white;
+}
+.socialMedia ul li{
+   display: inline;
+   padding: 10px;
+   font-size: 30px;
+}
+/* .tiTle{
+    position: fixed;
+} */
